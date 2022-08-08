@@ -16,6 +16,10 @@ export const StyledMInput = styledComponents.input`
         background: ${p => p.focusBg ? p.focusBg : '#fff'};
         border-color: ${p => p.focusBorderColor ? p.focusBorderColor : '#e1e1e1'};
     }
+
+    &:disabled {
+        background: #f1f1f1cc;
+    }
 `;
 
 export const StyledMMultilineInput = styledComponents.textarea`
@@ -34,5 +38,9 @@ export const StyledMMultilineInput = styledComponents.textarea`
     &:focus {
         background: ${p => p.focusBg ? p.focusBg : '#fff'};
         border-color: ${p => p.focusBorderColor ? p.focusBorderColor : '#e1e1e1'};
+    }
+
+    &:disabled {
+        background: #f1f1f1cc;
     }
 `;
