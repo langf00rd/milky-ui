@@ -6,6 +6,7 @@ const App = () => {
     <main>
       <MAvatar size='100px' radius='20px' src='http://blog.urbanpiper.com/content/images/2021/06/logo-react.png' />
       <MButton label='Click me!' />
+      <MAvatar bg='#00f777' size='100px' />
       <MOutlineButton label='Outline me!' />
       <MInput placeholder='Your name' />
       <MInput placeholder='Your email' />
