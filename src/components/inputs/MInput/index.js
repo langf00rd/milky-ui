@@ -1,7 +1,8 @@
 import React from 'react'
 import { StyledMInput, StyledMMultilineInput } from './styles'
+import css from '../../../../src/styles.module.css'
 
-export const MInput = ({ height, resize, padding, isMultiline, onChange, value, focusBg, focusBorderColor, width, radius, placeholder, borderColor, bg }) => {
+export const MInput = ({ disabled, height, resize, padding, isMultiline, onChange, value, focusBg, focusBorderColor, width, radius, placeholder, borderColor, bg }) => {
     if (isMultiline) return (
         <StyledMMultilineInput
             bg={bg}
@@ -16,6 +17,8 @@ export const MInput = ({ height, resize, padding, isMultiline, onChange, value, 
             placeholder={placeholder}
             onChange={onChange}
             value={value}
+            disabled={disabled}
+            className={css.input}
         ></StyledMMultilineInput>
     )
 
@@ -31,6 +34,8 @@ export const MInput = ({ height, resize, padding, isMultiline, onChange, value, 
             placeholder={placeholder}
             onChange={onChange}
             value={value}
+            disabled={disabled}
+            className={css.input}
         />
     )
 }
