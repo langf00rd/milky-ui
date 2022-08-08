@@ -8,6 +8,8 @@ const App = () => {
       <MButton label='Click me!' />
       <MOutlineButton label='Outline me!' />
       <MInput placeholder='Your name' />
+      <MInput placeholder='Your email' />
+      <MInput isMultiline={true} height='100px' resize='none' placeholder='Message' />
     </main>
   )
 }
