@@ -1,10 +1,15 @@
 import React from 'react'
-
-import { ExampleComponent } from 'milky-ui'
-import 'milky-ui/dist/index.css'
+import { MAvatar, MButton, MInput, MOutlineButton } from 'milky-ui'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <main>
+      <MAvatar size='100px' radius='20px' src='http://blog.urbanpiper.com/content/images/2021/06/logo-react.png' />
+      <MButton label='Click me!' />
+      <MOutlineButton label='Outline me!' />
+      <MInput placeholder='Your name' />
+    </main>
+  )
 }
 
 export default App
