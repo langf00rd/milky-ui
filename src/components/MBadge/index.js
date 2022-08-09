@@ -1,7 +1,15 @@
 import React from 'react'
 import { StyledMBadge } from './styles'
 
-export const MBadge = ({ label, bg, size, textColor, radius, fontSize }) => {
+export const MBadge = ({
+  label = '',
+  bg = '',
+  size = '',
+  textColor = '',
+  radius = '',
+  fontSize = '',
+  custom
+}) => {
   return (
     <StyledMBadge
       bg={bg}
@@ -9,6 +17,7 @@ export const MBadge = ({ label, bg, size, textColor, radius, fontSize }) => {
       radius={radius}
       fontSize={fontSize}
       size={size}
+      custom={custom}
     >
       {label}
     </StyledMBadge>

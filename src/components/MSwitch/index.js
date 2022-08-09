@@ -4,9 +4,9 @@ import { StyledMLabel, StyledMSwitch } from './style'
 export const MSwitch = ({
   value = false,
   onChange = () => {},
-  thumbColor,
-  activeColor,
-  inactiveColor
+  thumbColor = '',
+  activeColor = '',
+  inactiveColor = ''
 }) => {
   return (
     <span>

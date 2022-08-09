@@ -6,14 +6,15 @@ import {
 } from './styles'
 
 export const MAvatar = ({
-  action,
-  alt,
-  bg,
+  action = () => {},
+  alt = '',
+  bg = '',
   isEmpty,
-  fit,
-  size,
-  src,
-  radius
+  fit = '',
+  size = '',
+  src = '',
+  radius = '',
+  custom
 }) => {
   if (isEmpty)
     return (
@@ -21,6 +22,7 @@ export const MAvatar = ({
         <StyledMEmptyAvatar
           fit={fit}
           bg={bg}
+          custom={custom}
           size={size}
           radius={radius}
           src={src}
@@ -36,6 +38,7 @@ export const MAvatar = ({
       <StyledMAvatar
         fit={fit}
         bg={bg}
+        custom={custom}
         size={size}
         radius={radius}
         src={src}

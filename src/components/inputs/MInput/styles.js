@@ -21,6 +21,8 @@ export const StyledMInput = styledComponents.input`
     &:disabled {
         background: #f1f1f1cc;
     }
+
+    ${(p) => (p.custom ? p.custom : null)};
 `
 
 export const StyledMMultilineInput = styledComponents.textarea`
@@ -31,10 +33,10 @@ export const StyledMMultilineInput = styledComponents.textarea`
     background: ${(p) => (p.bg ? p.bg : '#fff')};
     border-color: ${(p) => (p.borderColor ? p.borderColor : '#e1e1e1')};
     padding: ${(p) => (p.padding ? p.padding : '1rem')};
+    width: ${(p) => (p.width ? p.width : '100%')};
     text-align: left;
     outline: none;
     transition: 0.1s linear;
-    width: ${(p) => (p.width ? p.width : '100%')};
     font-family: inherit;
 
     &:focus {
@@ -46,4 +48,6 @@ export const StyledMMultilineInput = styledComponents.textarea`
     &:disabled {
         background: #f1f1f1cc;
     }
+
+    ${(p) => (p.custom ? p.custom : null)};
 `

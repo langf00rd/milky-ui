@@ -2,17 +2,18 @@ import React from 'react'
 import { StyledMButton, StyledMLinkButton } from './styles'
 
 export const MButton = ({
-  to,
-  height,
-  width,
-  radius,
-  borderColor,
-  hoverBg,
-  hoverTextColor,
-  bg,
-  textColor,
-  label,
-  action
+  to = '',
+  height = '',
+  width = '',
+  radius = '',
+  borderColor = '',
+  hoverBg = '',
+  hoverTextColor = '',
+  bg = '',
+  textColor = '',
+  label = '',
+  action = () => {},
+  custom
 }) => {
   if (to)
     return (
@@ -27,6 +28,7 @@ export const MButton = ({
         hoverTextColor={hoverTextColor}
         hoverBg={hoverBg}
         onClick={action}
+        custom={custom}
       >
         {label}
       </StyledMLinkButton>
@@ -43,6 +45,7 @@ export const MButton = ({
       hoverTextColor={hoverTextColor}
       hoverBg={hoverBg}
       onClick={action}
+      custom={custom}
     >
       {label}
     </StyledMButton>

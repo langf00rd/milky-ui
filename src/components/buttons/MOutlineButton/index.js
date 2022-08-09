@@ -2,13 +2,14 @@ import React from 'react'
 import { StyledMOutlinedButton } from './styles'
 
 export const MOutlineButton = ({
-  height,
-  width,
-  radius,
-  color,
-  hoverColor,
-  label,
-  action
+  height = '',
+  width = '',
+  radius = '',
+  color = '',
+  hoverColor = '',
+  label = '',
+  action = () => {},
+  custom
 }) => {
   return (
     <StyledMOutlinedButton
@@ -18,6 +19,7 @@ export const MOutlineButton = ({
       radius={radius}
       color={color}
       onClick={action}
+      custom={custom}
     >
       {label}
     </StyledMOutlinedButton>

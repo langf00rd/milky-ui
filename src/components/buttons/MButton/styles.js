@@ -14,6 +14,7 @@ export const StyledMButton = styledComponents.button`
     display:flex;
     align-items:center;
     justify-content:center;
+    user-select: none;
 
     &:hover,
     &:active {
@@ -26,6 +27,8 @@ export const StyledMButton = styledComponents.button`
         transform: scale(0.9);
         box-shadow: rgb(38 57 77) 0px 6px 21px -11px;
     }
+
+    ${(p) => (p.custom ? p.custom : null)};
 `
 
 export const StyledMLinkButton = styledComponents.a`
@@ -43,6 +46,7 @@ export const StyledMLinkButton = styledComponents.a`
     align-items:center;
     justify-content:center;
     text-decoration: none;
+    user-select: none;
 
     &:hover,
     &:active {
@@ -55,4 +59,6 @@ export const StyledMLinkButton = styledComponents.a`
         transform: scale(0.9);
         box-shadow: rgb(38 57 77) 0px 6px 21px -11px;
     }
+
+    ${(p) => (p.custom ? p.custom : null)};
 `

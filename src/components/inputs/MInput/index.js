@@ -2,20 +2,21 @@ import React from 'react'
 import { StyledMInput, StyledMMultilineInput } from './styles'
 
 export const MInput = ({
-  disabled,
-  height,
-  resize,
-  padding,
-  isMultiline,
-  onChange,
+  disabled = false,
+  height = '',
+  resize = '',
+  padding = '',
+  isMultiline = false,
+  onChange = () => {},
   value,
-  focusBg,
-  focusBorderColor,
-  width,
-  radius,
-  placeholder,
-  borderColor,
-  bg
+  focusBg = '',
+  focusBorderColor = '',
+  width = '',
+  radius = '',
+  placeholder = '',
+  borderColor = '',
+  bg = '',
+  custom
 }) => {
   if (isMultiline)
     return (
@@ -25,6 +26,7 @@ export const MInput = ({
         placeholder={placeholder}
         onChange={onChange}
         disabled={disabled}
+        custom={custom}
         focusBg={focusBg}
         padding={padding}
         resize={resize}

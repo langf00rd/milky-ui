@@ -6,6 +6,7 @@ export const StyledMAvatar = styledComponents.img`
     border-radius: ${(p) => (p.radius ? p.radius : '9999px')};
     object-fit: ${(p) => (p.fit ? p.fit : 'cover')};
     background: ${(p) => (p.bg ? p.bg : '#f1f1f1')};
+    ${(p) => (p.custom ? p.custom : null)};
 `
 
 export const StyledMEmptyAvatar = styledComponents.div`
@@ -14,6 +15,7 @@ export const StyledMEmptyAvatar = styledComponents.div`
     border-radius: ${(p) => (p.radius ? p.radius : '9999px')};
     object-fit: ${(p) => (p.fit ? p.fit : 'cover')};
     background: ${(p) => (p.bg ? p.bg : '#f1f1f1')};
+    ${(p) => (p.custom ? p.custom : null)};
 `
 
 export const StyledMAvatarWrapper = styledComponents.div`
