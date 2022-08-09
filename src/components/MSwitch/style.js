@@ -1,4 +1,4 @@
-import styledComponents from "styled-components"
+import styledComponents from 'styled-components'
 
 export const StyledMSwitch = styledComponents.input`
     height: 0;
@@ -11,9 +11,9 @@ export const StyledMSwitch = styledComponents.input`
     }
 
     &:checked+label {
-        background: ${p => p.activeColor ? p.activeColor : '#2195f351'};
+        background: ${(p) => (p.activeColor ? p.activeColor : '#2195f351')};
     }
-`;
+`
 
 export const StyledMLabel = styledComponents.label`
     cursor: pointer;
@@ -23,7 +23,7 @@ export const StyledMLabel = styledComponents.label`
     display: block;
     border-radius: 100px;
     position: relative;
-    background: ${p => p.inactiveColor ? p.inactiveColor : '#2196f31f'};
+    background: ${(p) => (p.inactiveColor ? p.inactiveColor : '#2196f31f')};
 
     &:after {
         content: '';
@@ -32,7 +32,7 @@ export const StyledMLabel = styledComponents.label`
         left: 5px;
         width: 30px;
         height: 30px;
-        background: ${p => p.thumbColor ? p.thumbColor : '#017cf9'};
+        background: ${(p) => (p.thumbColor ? p.thumbColor : '#017cf9')};
         border-radius: 90px;
         transition: 0.3s;
     }
@@ -40,4 +40,4 @@ export const StyledMLabel = styledComponents.label`
     &:active:after {
         width: 40px;
     }
-`;
+`
