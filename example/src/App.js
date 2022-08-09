@@ -11,6 +11,8 @@ const App = () => {
       <MAvatar isEmpty={true} custom={'transform: scale(.8)'} radius="30px" bg="linear-gradient(45deg, #D38312, yellow)" size="80px" />
       <MBadge label="3" />
       <MBadge label="5300" />
+      <MOutlineButton label={'Hello world'} radius={'1000px'} hoverColor={'red'} />
+      <MButton hoverBg={'green'} radius='9999px' label='Rounded button!' bg={'#555'}/>
       <MButton radius={"10px"} action={() => alert("Yay! button clicked")} label="Click me!" />
       <MSwitch onChange={() => {
         setIsSwitched(!isSwitched);

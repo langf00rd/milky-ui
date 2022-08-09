@@ -16,9 +16,8 @@ export const StyledMButton = styledComponents.button`
     justify-content:center;
     user-select: none;
 
-    &:hover,
-    &:active {
-        color: ${(p) => (p.bg ? p.bg : p.textColor)};
+    &:hover {
+        color: ${(p) => (p.hoverTextColor ? p.hoverTextColor : p.textColor)};
         background: ${(p) => (p.hoverBg ? p.hoverBg : p.bg)};
         border-color: ${(p) => (p.hoverBg ? p.hoverBg : p.hoverBg)};
     }

@@ -15,8 +15,7 @@ export const StyledMOutlinedButton = styledComponents.button`
     justify-content:center;
     user-select: none;
 
-    &:hover,
-    &:active {
+    &:hover  {
         color: ${(p) => (p.hoverColor ? p.hoverColor : p.hoverColor)};
         border-color: ${(p) => (p.hoverColor ? p.hoverColor : p.hoverColor)};
     }
