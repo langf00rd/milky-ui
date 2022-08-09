@@ -9,7 +9,7 @@ export const MAvatar = ({
   action = () => {},
   alt = '',
   bg = '',
-  isEmpty,
+  isEmpty = false,
   fit = '',
   size = '',
   src = '',
@@ -26,7 +26,6 @@ export const MAvatar = ({
           size={size}
           radius={radius}
           src={src}
-          alt={alt}
           onClick={action}
           isEmpty={isEmpty}
         />
