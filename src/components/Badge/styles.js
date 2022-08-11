@@ -1,6 +1,6 @@
 import styledComponents from 'styled-components'
 
-export const StyledMBadge = styledComponents.div`
+export const StyledBadge = styledComponents.div`
   background: ${(p) => (p.bg ? p.bg : '#007fff')};
   box-sizing: border-box;
   min-width: ${(p) => (p.size ? p.size : '22px')};

@@ -1,6 +1,6 @@
 import styledComponents from 'styled-components'
 
-export const StyledMSwitch = styledComponents.input`
+export const StyledSwitch = styledComponents.input`
     height: 0;
     width: 0;
     visibility: hidden;
@@ -15,7 +15,7 @@ export const StyledMSwitch = styledComponents.input`
     }
 `
 
-export const StyledMLabel = styledComponents.label`
+export const StyledLabel = styledComponents.label`
     cursor: pointer;
     text-indent: -9999px;
     width: 70px;

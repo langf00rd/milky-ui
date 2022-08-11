@@ -1,7 +1,7 @@
 import React from 'react'
-import { StyledMBadge } from './styles'
+import { StyledBadge } from './styles'
 
-export const MBadge = ({
+export const Badge = ({
   label = '',
   bg = '',
   size = '',
@@ -11,7 +11,7 @@ export const MBadge = ({
   custom
 }) => {
   return (
-    <StyledMBadge
+    <StyledBadge
       bg={bg}
       textColor={textColor}
       radius={radius}
@@ -20,6 +20,6 @@ export const MBadge = ({
       custom={custom}
     >
       {label}
-    </StyledMBadge>
+    </StyledBadge>
   )
 }

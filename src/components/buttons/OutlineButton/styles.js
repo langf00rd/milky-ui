@@ -1,6 +1,6 @@
 import styledComponents from 'styled-components'
 
-export const StyledMOutlinedButton = styledComponents.button`
+export const StyledOutlinedButton = styledComponents.button`
     padding: .7rem 1.3rem;
     height: ${(p) => (p.height ? p.height : '')};
     width: ${(p) => (p.width ? p.width : 'max-content')};

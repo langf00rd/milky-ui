@@ -1,7 +1,7 @@
 import React from 'react'
-import { StyledMLabel, StyledMSwitch } from './style'
+import { StyledLabel, StyledSwitch } from './style'
 
-export const MSwitch = ({
+export const Switch = ({
   value = false,
   onChange = () => {},
   thumbColor = '',
@@ -10,14 +10,14 @@ export const MSwitch = ({
 }) => {
   return (
     <span>
-      <StyledMSwitch
+      <StyledSwitch
         activeColor={activeColor}
         checked={value}
         onChange={onChange}
         type='checkbox'
         id='switch'
       />
-      <StyledMLabel
+      <StyledLabel
         thumbColor={thumbColor}
         inactiveColor={inactiveColor}
         htmlFor='switch'

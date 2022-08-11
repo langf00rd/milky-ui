@@ -1,7 +1,7 @@
 import React from 'react'
-import { StyledMInput, StyledMMultilineInput } from './styles'
+import { StyledInput, StyledMultilineInput } from './styles'
 
-export const MInput = ({
+export const Input = ({
   disabled = false,
   height = '',
   resize = '',
@@ -20,7 +20,7 @@ export const MInput = ({
 }) => {
   if (isMultiline)
     return (
-      <StyledMMultilineInput
+      <StyledMultilineInput
         focusBorderColor={focusBorderColor}
         borderColor={borderColor}
         placeholder={placeholder}
@@ -39,7 +39,7 @@ export const MInput = ({
     )
 
   return (
-    <StyledMInput
+    <StyledInput
       focusBorderColor={focusBorderColor}
       borderColor={borderColor}
       placeholder={placeholder}

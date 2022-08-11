@@ -1,11 +1,7 @@
 import React from 'react'
-import {
-  StyledMAvatar,
-  StyledMAvatarWrapper,
-  StyledMEmptyAvatar
-} from './styles'
+import { StyledAvatar, StyledAvatarWrapper, StyledEmptyAvatar } from './styles'
 
-export const MAvatar = ({
+export const Avatar = ({
   action = () => {},
   alt = '',
   bg = '',
@@ -18,8 +14,8 @@ export const MAvatar = ({
 }) => {
   if (isEmpty)
     return (
-      <StyledMAvatarWrapper>
-        <StyledMEmptyAvatar
+      <StyledAvatarWrapper>
+        <StyledEmptyAvatar
           fit={fit}
           bg={bg}
           custom={custom}
@@ -29,12 +25,12 @@ export const MAvatar = ({
           onClick={action}
           isEmpty={isEmpty}
         />
-      </StyledMAvatarWrapper>
+      </StyledAvatarWrapper>
     )
 
   return (
-    <StyledMAvatarWrapper>
-      <StyledMAvatar
+    <StyledAvatarWrapper>
+      <StyledAvatar
         fit={fit}
         bg={bg}
         custom={custom}
@@ -45,6 +41,6 @@ export const MAvatar = ({
         onClick={action}
         isEmpty={isEmpty}
       />
-    </StyledMAvatarWrapper>
+    </StyledAvatarWrapper>
   )
 }

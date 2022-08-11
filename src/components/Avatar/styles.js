@@ -1,6 +1,6 @@
 import styledComponents from 'styled-components'
 
-export const StyledMAvatar = styledComponents.img`
+export const StyledAvatar = styledComponents.img`
     width: ${(p) => (p.size ? p.size : '60px')};
     height: ${(p) => (p.size ? p.size : '60px')};
     border-radius: ${(p) => (p.radius ? p.radius : '9999px')};
@@ -9,7 +9,7 @@ export const StyledMAvatar = styledComponents.img`
     ${(p) => (p.custom ? p.custom : null)};
 `
 
-export const StyledMEmptyAvatar = styledComponents.div`
+export const StyledEmptyAvatar = styledComponents.div`
     width: ${(p) => (p.size ? p.size : '60px')};
     height: ${(p) => (p.size ? p.size : '60px')};
     border-radius: ${(p) => (p.radius ? p.radius : '9999px')};
@@ -18,6 +18,6 @@ export const StyledMEmptyAvatar = styledComponents.div`
     ${(p) => (p.custom ? p.custom : null)};
 `
 
-export const StyledMAvatarWrapper = styledComponents.div`
+export const StyledAvatarWrapper = styledComponents.div`
     width: max-content;
 `

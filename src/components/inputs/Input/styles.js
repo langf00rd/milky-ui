@@ -1,6 +1,6 @@
 import styledComponents from 'styled-components'
 
-export const StyledMInput = styledComponents.input`
+export const StyledInput = styledComponents.input`
     border: 1px solid;
     border-radius: ${(p) => (p.radius ? p.radius : '10px')};
     background: ${(p) => (p.bg ? p.bg : '#fff')};
@@ -25,7 +25,7 @@ export const StyledMInput = styledComponents.input`
     ${(p) => (p.custom ? p.custom : null)};
 `
 
-export const StyledMMultilineInput = styledComponents.textarea`
+export const StyledMultilineInput = styledComponents.textarea`
     border-radius: ${(p) => (p.radius ? p.radius : '10px')};
     border: 1px solid;
     height: ${(p) => (p.height ? p.height : '')};
