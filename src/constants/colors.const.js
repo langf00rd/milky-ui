@@ -1,5 +1,7 @@
 export const colors = {
-  primary: '',
+  primary: '#007fff',
   secondary: '',
-  accent: ''
+  accent: '',
+  outlineColor: '#007fffc7',
+  inputBorderColor: '#e1e1e1'
 }

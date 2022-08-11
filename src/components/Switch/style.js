@@ -18,8 +18,8 @@ export const StyledSwitch = styledComponents.input`
 export const StyledLabel = styledComponents.label`
     cursor: pointer;
     text-indent: -9999px;
-    width: 70px;
-    height: 40px;
+    width: 50px;
+    height: 30px;
     display: block;
     border-radius: 100px;
     position: relative;
@@ -30,14 +30,14 @@ export const StyledLabel = styledComponents.label`
         position: absolute;
         top: 5px;
         left: 5px;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background: ${(p) => (p.thumbColor ? p.thumbColor : '#017cf9')};
         border-radius: 90px;
         transition: 0.3s;
     }
-
-    &:active:after {
-        width: 40px;
-    }
+    // stretchy bouncy effect on click
+    // &:active:after {
+    //     width: 30px;
+    // }
 `

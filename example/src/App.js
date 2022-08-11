@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Avatar, Meta, Badge, Switch, Button, Input, OutlineButton } from "milky-ui";
+import { Avatar, Loader, Meta, Badge, Switch, Button, Input, OutlineButton } from "milky-ui";
 
 const App = () => {
   const [isSwitched, setIsSwitched] = useState(false);
@@ -12,6 +12,10 @@ const App = () => {
         twitterDescription="Twitter description"
         image="https://blog.urbanpiper.com/content/images/2021/06/logo-react.png"
       />
+      <Loader color={'red'} />
+      <Loader size={'20px'} />
+      <Loader color={'green'} variant={1} />
+      <Loader color={'orange'} variant={2} />
       <Avatar src="https://blog.urbanpiper.com/content/images/2021/06/logo-react.png" />
       <Avatar isEmpty={true} radius="30px" bg="#007fff" size="80px" />
       <Avatar isEmpty={true} custom={"transform: scale(.8)"} radius="30px" bg="linear-gradient(45deg, #D38312, yellow)"
