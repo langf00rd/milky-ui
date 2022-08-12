@@ -1,11 +1,11 @@
 import React from 'react'
-import { StyledLoader, StyledLoader1, StyledLoader2 } from './styles'
+import { StyledSpinner, StyledSpinner1, StyledSpinner2 } from './styles'
 
-export const Loader = (props) => {
+export const Spinner = (props) => {
   const { size, color, variant, thickness, speed } = props
   if (variant === 1)
     return (
-      <StyledLoader1
+      <StyledSpinner1
         thickness={thickness}
         speed={speed}
         size={size}
@@ -14,7 +14,7 @@ export const Loader = (props) => {
     )
   if (variant === 2)
     return (
-      <StyledLoader2
+      <StyledSpinner2
         thickness={thickness}
         speed={speed}
         size={size}
@@ -22,7 +22,7 @@ export const Loader = (props) => {
       />
     )
   return (
-    <StyledLoader
+    <StyledSpinner
       thickness={thickness}
       speed={speed}
       size={size}

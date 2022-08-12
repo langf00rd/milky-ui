@@ -1,7 +1,7 @@
 import styledComponents from 'styled-components'
 import { colors } from '../../constants/colors.const'
 
-export const StyledLoader = styledComponents.div`
+export const StyledSpinner = styledComponents.div`
   width: ${(p) => (p.size ? p.size : '48px')};
   height: ${(p) => (p.size ? p.size : '48px')};
   border: ${(p) => (p.thickness ? p.thickness : '4px')} solid ${(p) =>
@@ -19,7 +19,7 @@ export const StyledLoader = styledComponents.div`
 
 /***/
 
-export const StyledLoader1 = styledComponents.div`
+export const StyledSpinner1 = styledComponents.div`
   width: ${(p) => (p.size ? p.size : '48px')};
   height: ${(p) => (p.size ? p.size : '48px')};
   border: 5px dotted ${(p) => (p.color ? p.color : colors.primary)};
@@ -41,7 +41,7 @@ export const StyledLoader1 = styledComponents.div`
 
 /***/
 
-export const StyledLoader2 = styledComponents.div`
+export const StyledSpinner2 = styledComponents.div`
   width: ${(p) => (p.size ? p.size : '48px')};
   height: ${(p) => (p.size ? p.size : '48px')};
   border-radius: 50%;

@@ -1,25 +1,29 @@
 import styledComponents from 'styled-components'
+import { constStyles } from '../../../constants/styles.const'
 
 export const StyledMButton = styledComponents.button`
-    padding: .7rem 1.3rem;
-    height: ${(p) => (p.height ? p.height : '')};
-    width: ${(p) => (p.width ? p.width : 'max-content')};
-    border: none;
+    border-radius: ${(p) => (p.radius ? p.radius : constStyles.radius)};
     border: 2.3px solid ${(p) => (p.bg ? p.bg : '#007fff')};
-    cursor: pointer;
-    border-radius: ${(p) => (p.radius ? p.radius : '10px')};
-    background: ${(p) => (p.bg ? p.bg : '#007fff')};
     color: ${(p) => (p.textColor ? p.textColor : '#fff')};
+    width: ${(p) => (p.width ? p.width : 'max-content')};
+    background: ${(p) => (p.bg ? p.bg : '#007fff')};
+    height: ${(p) => (p.height ? p.height : '')};
+    cursor: pointer;
     transition: 0.1s linear;
-    display:flex;
     align-items:center;
     justify-content:center;
     user-select: none;
+    display: inline-flex;
+    -webkit-box-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1.2;
+    padding: 0.4rem 0.7rem;
 
     &:hover {
         color: ${(p) => (p.hoverTextColor ? p.hoverTextColor : p.textColor)};
-        background: ${(p) => (p.hoverBg ? p.hoverBg : p.bg)};
         border-color: ${(p) => (p.hoverBg ? p.hoverBg : p.hoverBg)};
+        background: ${(p) => (p.hoverBg ? p.hoverBg : p.bg)};
     }
 
     &:active {
@@ -33,21 +37,25 @@ export const StyledMButton = styledComponents.button`
 /***/
 
 export const StyledMLinkButton = styledComponents.a`
-    padding: .7rem 1.3rem;
     height: ${(p) => (p.height ? p.height : '')};
     width: ${(p) => (p.width ? p.width : 'max-content')};
-    border: none;
     border: 2.3px solid ${(p) => (p.bg ? p.bg : '#007fff')};
     cursor: pointer;
-    border-radius: ${(p) => (p.radius ? p.radius : '10px')};
+    border-radius: ${(p) => (p.radius ? p.radius : constStyles.radius)};
     background: ${(p) => (p.bg ? p.bg : '#007fff')};
     color: ${(p) => (p.textColor ? p.textColor : '#fff')};
     transition: 0.1s linear;
-    display:flex;
     align-items:center;
     justify-content:center;
-    text-decoration: none;
     user-select: none;
+    display: inline-flex;
+    -webkit-box-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1.2;
+    padding: 0.4rem 0.7rem;
+    text-decoration: none;
+    font-size: 14px;
 
     &:hover,
     &:active {

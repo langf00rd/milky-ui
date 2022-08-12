@@ -1,3 +1,3 @@
 export const constStyles = {
-  inputRadius: '0.375rem'
+  radius: '0.375rem'
 }
