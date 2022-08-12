@@ -4,6 +4,11 @@ import { Avatar, Loader, Meta, Badge, Switch, Button, Input, OutlineButton } fro
 
 const App = () => {
   const [isSwitched, setIsSwitched] = useState(false);
+
+  const buttonClick=()=>{
+    alert("Yay! button clicked")
+  }
+
   return (
     <main>
       <Meta
@@ -24,14 +29,14 @@ const App = () => {
       <Badge label="5300" />
       <OutlineButton label={"Hello world"} radius={"1000px"} hoverColor={"red"} />
       <Button hoverBg={"green"} radius="9999px" label="Rounded button!" bg={"#555"} />
-      <Button radius={"10px"} action={() => alert("Yay! button clicked")} label="Click me!" />
+      <Button radius={"10px"} action={buttonClick} label="Click me!" />
       <Button to={"/home"} label={"Go home!"} />
       <Switch onChange={() => {
         setIsSwitched(!isSwitched);
       }} value={isSwitched} />
-      <OutlineButton action={() => alert("Yay! button clicked")} label="New button!" />
+      <OutlineButton action={buttonClick} label="New button!" />
       <Input placeholder="Your name" />
-      <Input disabled placeholder="Your email" />
+      <Input borderStyle='dashed' disabled placeholder="Your email" />
       <Input isMultiline={true} height="100px" resize="none" placeholder="Message" />
     </main>
   );

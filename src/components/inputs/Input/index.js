@@ -14,25 +14,31 @@ export const Input = ({
   width = '',
   radius = '',
   placeholder = '',
+  borderStyle = '',
+  placeholderColor = '',
   borderColor = '',
   bg = '',
+  borderWidth = '',
   custom
 }) => {
   if (isMultiline)
     return (
       <StyledMultilineInput
         focusBorderColor={focusBorderColor}
-        borderColor={borderColor}
         placeholder={placeholder}
         onChange={onChange}
         disabled={disabled}
         custom={custom}
         focusBg={focusBg}
         padding={padding}
+        borderWidth={borderWidth}
         resize={resize}
         radius={radius}
         height={height}
         value={value}
+        borderStyle={borderStyle}
+        placeholderColor={placeholderColor}
+        borderColor={borderColor}
         width={width}
         bg={bg}
       />
@@ -41,13 +47,16 @@ export const Input = ({
   return (
     <StyledInput
       focusBorderColor={focusBorderColor}
-      borderColor={borderColor}
       placeholder={placeholder}
       onChange={onChange}
       disabled={disabled}
       focusBg={focusBg}
       padding={padding}
+      borderWidth={borderWidth}
       radius={radius}
+      borderStyle={borderStyle}
+      placeholderColor={placeholderColor}
+      borderColor={borderColor}
       value={value}
       width={width}
       bg={bg}
