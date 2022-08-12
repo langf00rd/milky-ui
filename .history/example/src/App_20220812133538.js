@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Avatar, Label,Spinner, Meta, Badge, Switch, Button, Input, OutlineButton } from "milky-ui";
+import { Avatar, Spinner, Meta, Badge, Switch, Button, Input, OutlineButton } from "milky-ui";
+import { Label } from "../../src";
 
 const App = () => {
   const [isSwitched, setIsSwitched] = useState(false);
@@ -27,9 +28,7 @@ const App = () => {
               size="80px" />
       <Badge label="3" />
       <Badge label="5300" />
-      <Label textColor='lime' bg='purple' text='COMPONENTS' />
-      <Label type='error' text='ERROR' />
-      <Label type='success' text='SUCCESS' />
+      <Label text='COMPONENTS' bg='green' />
       <OutlineButton label={"Hello world"} radius={"1000px"} hoverColor={"red"} />
       <Button bg='#3182ce' label='Click'/>
       <OutlineButton color='green' label='Click'/>

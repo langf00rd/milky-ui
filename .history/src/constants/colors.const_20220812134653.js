@@ -10,6 +10,5 @@ export const colors = {
   borderColor: '#E2E8F0',
   sucess: '#C5F3D5',
   error: '#F9D7D6',
-  successTextColor: '#25543D',
-  errorTextColor: '#822B27'
+  successTextColor:'#25543D',
 }

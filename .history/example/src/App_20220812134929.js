@@ -27,8 +27,8 @@ const App = () => {
               size="80px" />
       <Badge label="3" />
       <Badge label="5300" />
-      <Label textColor='lime' bg='purple' text='COMPONENTS' />
-      <Label type='error' text='ERROR' />
+      <Label color='red' text='COMPONENTS' type='success' />
+      <Label type='error' text='Error' />
       <Label type='success' text='SUCCESS' />
       <OutlineButton label={"Hello world"} radius={"1000px"} hoverColor={"red"} />
       <Button bg='#3182ce' label='Click'/>
