@@ -4,12 +4,13 @@ import { colors } from '../../constants/colors.const'
 export const StyledLoader = styledComponents.div`
   width: ${(p) => (p.size ? p.size : '48px')};
   height: ${(p) => (p.size ? p.size : '48px')};
-  border: 4px solid ${(p) => (p.color ? p.color : colors.primary)};
+  border: ${(p) => (p.thickness ? p.thickness : '4px')} solid ${(p) =>
+  p.color ? p.color : colors.primary};
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+  animation: rotation  ${(p) => (p.speed ? p.speed : '2s')} linear infinite;
 
   @keyframes rotation {
   0% { transform: rotate(0deg); }
@@ -26,7 +27,7 @@ export const StyledLoader1 = styledComponents.div`
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  animation: rotation 2s linear infinite;
+  animation: rotation ${(p) => (p.speed ? p.speed : '2s')} linear infinite;
 
   @keyframes rotation {
   0% {
@@ -45,10 +46,11 @@ export const StyledLoader2 = styledComponents.div`
   height: ${(p) => (p.size ? p.size : '48px')};
   border-radius: 50%;
   display: inline-block;
-  border-top: 3px solid ${(p) => (p.color ? p.color : colors.primary)};
+  border-top: ${(p) => (p.thickness ? p.thickness : '3px')} solid ${(p) =>
+  p.color ? p.color : colors.primary};
   border-right: 3px solid transparent;
   box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+  animation: rotation  ${(p) => (p.speed ? p.speed : '2s')} linear infinite;
 
   @keyframes rotation {
   0% {

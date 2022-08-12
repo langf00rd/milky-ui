@@ -12,8 +12,8 @@ const App = () => {
         twitterDescription="Twitter description"
         image="https://blog.urbanpiper.com/content/images/2021/06/logo-react.png"
       />
-      <Loader color={'red'} />
-      <Loader size={'20px'} />
+      <Loader speed={'.5s'} thickness={'4px'} color={'red'} />
+      <Loader thickness={'3px'} size={'20px'} />
       <Loader color={'green'} variant={1} />
       <Loader color={'orange'} variant={2} />
       <Avatar src="https://blog.urbanpiper.com/content/images/2021/06/logo-react.png" />

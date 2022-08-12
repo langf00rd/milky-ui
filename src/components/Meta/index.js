@@ -33,9 +33,9 @@ export const Meta = (props) => {
     <MetaTags>
       {/* Primary Meta Tags */}
       <title>{title}</title>
+      <meta name='description' content={description} />
       <meta name='robots' content={robots} />
       <meta name='title' content={title} />
-      <meta name='description' content={description} />
 
       {/* Open Graph / Facebook */}
       <meta property='og:description' content={ogDescription || description} />
